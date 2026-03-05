@@ -2,6 +2,10 @@
   "name": "@org/backend",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "prisma db seed"
+  },
   "nx": {
     "targets": {
       "build": {

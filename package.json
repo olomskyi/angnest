@@ -2,7 +2,11 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "backend:prisma:generate": "npm run prisma:generate --prefix apps/backend",
+    "backend:prisma:seed": "npm run prisma:seed --prefix apps/backend",
+    "backend:prisma:migrate": "npm run prisma:migrate --prefix apps/backend"
+  },
   "private": true,
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -17,12 +21,14 @@
     "@nx/vite": "22.5.1",
     "@nx/web": "22.5.1",
     "@nx/webpack": "22.5.1",
+    "@prisma/client": "^7.4.2",
     "@swc-node/register": "1.11.1",
     "@swc/core": "1.15.8",
     "@swc/helpers": "0.5.18",
     "@swc/jest": "~0.2.38",
     "@types/jest": "^30.0.0",
     "@types/node": "20.19.9",
+    "@types/pg": "^8.18.0",
     "@vitest/ui": "^4.0.0",
     "ajv": "^8.0.0",
     "eslint": "^9.8.0",
@@ -34,8 +40,9 @@
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "22.5.1",
     "prettier": "^2.6.2",
+    "prisma": "^7.4.2",
     "ts-jest": "^29.4.0",
-    "ts-node": "10.9.1",
+    "ts-node": "^10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",
@@ -53,7 +60,9 @@
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
+    "@prisma/adapter-pg": "^7.4.2",
     "axios": "^1.6.0",
+    "pg": "^8.20.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   }

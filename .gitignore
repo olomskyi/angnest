@@ -30,6 +30,7 @@ node_modules
 !.vscode/extensions.json
 
 # misc
+.env
 /.sass-cache
 /connect.lock
 /coverage
@@ -51,3 +52,4 @@ Thumbs.db
 test-output
 
 vite.config.*.timestamp*
+/generated/prisma

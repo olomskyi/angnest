@@ -72,5 +72,11 @@
     "test": {
       "dependsOn": ["^build"]
     }
+  },
+  "watch": {
+    "ignore": [
+      "**/*.gql",
+      "**/schema.gql"
+    ]
   }
 }

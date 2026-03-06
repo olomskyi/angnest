@@ -53,3 +53,5 @@ test-output
 
 vite.config.*.timestamp*
 /generated/prisma
+
+.angular

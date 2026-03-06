@@ -12,9 +12,9 @@ nx g @nx/angular:app apps/frontend
 https://nx.dev/docs/technologies/angular/guides/using-tailwind-css-with-angular-projects
 https://angular.dev/guide/tailwind
 
-npm i -D tailwindcss postcss autoprefixer
-npm i --save-dev daisyui@4.12.24
-npx tailwindcss init -p
+npm install -D tailwindcss@3.4.1 postcss@8.4.35 autoprefixer@10.4.17
+npm install -D daisyui@4.12.24
+npx tailwindcss@3.4.1 init -p
 
 ```
 

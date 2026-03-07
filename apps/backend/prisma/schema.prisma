@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = env("PRISMA_CLIENT_OUTPUT")
+  output   = "../../../node_modules/.prisma/client"
   previewFeatures = ["driverAdapters"]
   engineType      = "library"
 }

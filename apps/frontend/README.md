@@ -22,10 +22,16 @@ npm i @ngrx/signals apollo-angular
 
 ```
 
-## Run
+## Run / Operate
 
 ```sh
 nx serve frontend
+
+# Clean up
+npx nx reset
+# Backend kill
+taskkill /F /IM node.exe 2>nul
+
 ```
 
 ## Dev
@@ -35,6 +41,7 @@ nx serve frontend
 angnest\apps\frontend\src\app>nx g c components/header/header
 # Products screen
 angnest\apps\frontend\src\app>nx g c components/products/products
-
+# Home
+angnest\apps\frontend\src\app>nx g c components/home/home
 
 ```
